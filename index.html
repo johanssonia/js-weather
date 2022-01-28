@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <div class="divForInput">
+        <input type="text" placeholder="search" id="inputForSearch">
+        <img id="imgSearch" src="search.png" width="26px" height="26px" />
+    </div>
+
+
+    <div class="container">
+
+        <div class="divForTabs">
+
+            <div class="tab">
+                <div id="tab_1">
+                    <div id="degree">
+                        <div id="degree_p"></div>
+                        <img src="degree.png" height="16px" id="degree_img" style="display: none;">
+                    </div>
+                    <div id="divForWeatherImg">
+                        <img src="cloud.svg" id="cloud">
+                    </div>
+                    <div id="divForCity">
+                        <div id="city_1">City</div>
+                        <img src="heart.png" height="26px" id="heart">
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="tab_2">
+                <div class="city_style"></div>
+                <div class="loc" id="detail_temperature">Temperature:</div>
+                <div class="loc" id="detail_feels">Feels like:</div>
+                <div class="loc" id="detail_weather">Weather:</div>
+                <div class="loc" id="detail_sunrise">Sunrise:</div>
+                <div class="loc" id="detail_sunset">Sunset:</div>
+            </div>
+
+            <div class="tab" id="tab_3"></div>
+
+            <div class="tablinks">
+                <nav>
+                    <a href="#tab_1" class="link" id="link_1"><span>Now</span></a>
+                    <a href="#tab_2" class="link" id="link_2"><span>Details</span></a>
+                    <a href="#tab_3" class="link" id="link_3"><span>Forecast</span></a>
+                </nav>
+            </div>
+
+        </div>
+        <div class="divForAddedLocations">
+            <div id="addedLocations" class="city_style">Added locations:</div>
+            <div id="listOfLocations">
+                
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
